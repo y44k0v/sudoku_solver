@@ -17,6 +17,9 @@ Puzzle taken from the [wikipedia](https://en.wikipedia.org/wiki/Sudoku)  article
 |  8 |   0 |   0 |   0 |   0 |   8 |   0 |   0 |   7 |   9 |
 
 
+![puzzle](https://upload.wikimedia.org/wikipedia/commons/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg)
+
+
 The input is in the form of a list of 81 elements with missing values represented by zeros:
 
 ```
@@ -155,6 +158,9 @@ iteration:  10   100.0 % solved
 |  6 |   9 |   6 |   1 |   5 |   3 |   7 |   2 |   8 |   4 |
 |  7 |   2 |   8 |   7 |   4 |   1 |   9 |   6 |   3 |   5 |
 |  8 |   3 |   4 |   5 |   2 |   8 |   6 |   1 |   7 |   9 |
+
+![solution](https://upload.wikimedia.org/wikipedia/commons/1/12/Sudoku_Puzzle_by_L2G-20050714_solution_standardized_layout.svg)
+
 
 Does not do good on very hard puzzles like the one below, extra implementations needed for the cases where missing values have not  a single value as an option anymore. It will do well on easy, averages and hard puzzles. Test to be implemented
 
