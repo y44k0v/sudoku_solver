@@ -1,6 +1,6 @@
 # sudoku_solver
 
-Basic sudoku solver that fills values where only one value option is available
+Basic python sudoku solver that fills values where only one value option is available
 
 Puzzle taken from the [wikipedia](https://en.wikipedia.org/wiki/Sudoku)  article.
 
@@ -162,7 +162,7 @@ iteration:  10   100.0 % solved
 ![solution](https://upload.wikimedia.org/wikipedia/commons/1/12/Sudoku_Puzzle_by_L2G-20050714_solution_standardized_layout.svg)
 
 
-Does not do good on very hard puzzles like the one below, extra implementations needed for the cases where missing values have not  a single value as an option anymore. It will do well on easy, averages and hard puzzles. Test to be implemented
+Does not do good on very hard puzzles like the one below, extra implementations needed for the cases where missing values have not  a single value as an option anymore.  It will do well on easy, averages and hard puzzles. Test to be implemented.
 
 ```
 
