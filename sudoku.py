@@ -102,7 +102,6 @@ def print_sudoku(sudoku):
 
 # Solution
 
-
 def solution(puzzle):
     Rows = extract_rows(puzzle)
     Cols = extract_cols(Rows)
