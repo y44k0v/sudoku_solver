@@ -22,7 +22,7 @@ Puzzle taken from the [wikipedia](https://en.wikipedia.org/wiki/Sudoku)  article
 
 The input is in the form of a list of 81 elements with missing values represented by zeros:
 
-```
+```python
 # 9x9 puzzle
 puzzle = [5, 3, 0, 0, 7, 0, 0, 0, 0,
           6, 0, 0, 1, 9, 5, 0, 0, 0,
@@ -37,7 +37,7 @@ puzzle = [5, 3, 0, 0, 7, 0, 0, 0, 0,
 
 Rows, columns and 3x3 grids (squares) are extracted:
 
-```
+```python
 # retrieve rows
 def extract_rows(puzzle):
     rows = []
@@ -75,7 +75,7 @@ def get_squares(puzzle):
 
 A dictionary is created with the position of every missing value according with the tuple (square, row, column). Missing numbers per square are found and every possibble number is assigned to the missing values. Folowinf sudoku rules: only one value from 1-9 in every 3x3 square, row and column:
 
-```
+```python
 # finds locations of missing values by 3x3 square, row and column
 def find_all_empty(puzzle):
   locs = {}
@@ -114,7 +114,7 @@ def possible_values(empty_info, SQs, Rows, Cols, missSQs):
 
 Cells with only one posibble valu from 1-9 are filled, and missing values for squares are updated accordingly:
 
-```
+```python
 # cells that have numbers with only one possible value are filled and 
 # missing numbers in 3x3 square are updated 
 def assign_single(puzzle, empty, missSQs):
@@ -133,7 +133,7 @@ def assign_single(puzzle, empty, missSQs):
 
 The assignment of sigle values continues until puzzle is solved:
 
-```
+```hcl
 iteration:  1    7.84 % solved
 iteration:  2    17.65 % solved
 iteration:  3    31.37 % solved
@@ -164,7 +164,7 @@ iteration:  10   100.0 % solved
 
 Does not do good on very hard puzzles like the one below, extra implementations needed for the cases where missing values have not  a single value as an option anymore.  It will do well on easy, averages and hard puzzles. Test to be implemented.
 
-```
+```hcl
 
 [0, 0, 6, 0, 5, 0, 0, 3, 0]
 [3, 0, 0, 7, 6, 0, 4, 0, 0]
